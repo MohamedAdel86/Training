@@ -1,1 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="../style/normalization.css" />
+    <link rel="stylesheet" href="../style/nomination.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nomination Form</title>
+  </head>
+  <body>
+    <aside>
+      <ul>
+        <li><a href="../signin.html">login</a></li>
+        <li><a href="#">Reports</a></li>
+      </ul>
+    </aside>
+    <section class="main-sec">
+      <div class="container">
+        <form class="nomination">
+          <div class="feild">
+            <label for="name">الاسم :</label>
+            <input type="text" name="name" id="name" required />
+          </div>
+          <div class="feild">
+            <label for="phone">رقم الهاتف :</label>
+            <input type="text" name="phone" id="phone" required />
+          </div>
+          <div class="feild">
+            <label for="idnum">الرقم القومي : </label>
+            <input type="text" name="idnum" id="name" required />
+          </div>
+          <div class="feild">
+            <label for="adress">العنوان :</label>
+            <input type="text" name="adress" id="adress" required />
+          </div>
+          <div class="feild">
+            <label for="bdate">تاريخ الميلاد :</label>
+            <input type="date" name="" id="bdate" />
+          </div>
+          <div class="select">
+            <label for="acdy">الفرقة :</label>
+            <select name="acdy" id="acdy" required>
+              <option value="2">الفرقة الثانية</option>
+              <option value="3">الفرقة الثالثة</option>
+              <option value="4">الفرقة الرابعة</option>
+            </select>
+          </div>
+          <div class="select">
+            <label for="commission">اللجنة :</label>
+            <select name="acdy" id="commission" required>
+              <option value="2">اللجنة العلمية</option>
+              <option value="2">اللجنة الرياضية</option>
+              <option value="2">اللجنة الاجتماعية</option>
+              <option value="2">أسرةالجوالة والخدمات</option>
+              <option value="2">اللجنة الثقافية</option>
+              <option value="2">اللجنة الفنية</option>
+              <option value="2">اللجنة الاسر والرحلات</option>
+            </select>
+          </div>
+          <div class="ch-po">
+            <input type="radio" name="position" id="head-position" />
+            <label for="head-position" onclick="choosePosition()">
+              الترشح لمنصب الامين</label
+            >
+            <input type="radio" name="position" id="deputy-position" />
+            <label for="deputy-position" onclick="choosePosition()">
+              الترشح لمنصب الامين المساعد</label
+            >
+          </div>
 
+          <div class="feild">
+            <label for="upload">ْإثبات المشاركة في الانشطة</label>
+            <input
+              type="file"
+              accept=".pdf"
+              name="comfil"
+              id="upload"
+              required
+            />
+          </div>
+
+          <input type="submit" value="تقديم الاستمارة" />
+        </form>
+      </div>
+    </section>
+    <script src="../scripts/nomination.js"></script>
+  </body>
+</html>
