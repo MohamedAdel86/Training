@@ -1,0 +1,20 @@
+form {
+    width: 400px;
+    font-size: 14pt;
+}
+
+input[type="submit"]{
+    background-color:rgb(22, 0, 70);
+    width: 140px;
+    height: 50px;
+    padding: 5px;
+    font: bold 20px sans-serif;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    border: none;
+
+}
+input[type="submit"]:hover{
+    background-color: rgb(38, 12, 89);
+    transform: 0.6s;
+}

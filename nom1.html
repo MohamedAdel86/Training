@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta property="og:title" content="Nomination page">
+    <meta property="og:image" content="../images/logo.jpg">
+    <meta property="og:description" content="Students Union">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/common.css">
+    <link rel="stylesheet" href="style/nomination.css" />
+    <script src="scripts/common.js" defer></script>
+    <script src="scripts/nomination.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="images/logo.jpg">
+    <title>Nomination Form</title>
+  </head>
+  <body>
+
+ 
+    <header>
+      <a href="index.html">
+      <img src="images/logo.jpg" alt="logo" class="logo">
+      </a>
+      <a href="index.html">
+      <h1 id="logotext1">FCAI Beni Suef</h1>
+      <h1 id="logotext2">Student's Union Elections</h1>
+      </a>
+      </header>
+
+      <nav>
+        <button id="b1">Login</button>
+        <button id="b2">Elect</button>
+        <button id="b3">Apply for nominatinon</button>
+        </nav>
+
+      <main class="container">
+    
+        <form class="nomination">
+              <div class="field">
+                <label for="name">الاسم :</label>
+                <input type="text" name="name" id="name" required />
+              </div> 
+              <div class="field">
+                <label for="phone">رقم الهاتف :</label>
+                <input type="text" name="phone" id="phone" required />
+              </div>
+              <div class="field">
+                <label for="idnum">الرقم القومي : </label>
+                <input type="text" name="idnum" id="name" required />
+              </div>
+              <div class="field">
+                <label for="adress">العنوان :</label>
+                <input type="text" name="adress" id="adress" required />
+              </div>
+              <div class="field">
+                <label for="bdate">تاريخ الميلاد :</label>
+                <input type="date" name="" id="bdate" />
+              </div>
+              <div class="select">
+                <label for="acdy">الفرقة :</label>
+                <select name="acdy" id="acdy" required>
+                  <option value="2">الفرقة الثانية</option>
+                  <option value="3">الفرقة الثالثة</option>
+                  <option value="4">الفرقة الرابعة</option>
+                </select>
+              </div>
+              <div class="select">
+                <label for="commission">اللجنة :</label>
+                <select name="acdy" id="commission" required>
+                  <option value="2">اللجنة العلمية</option>
+                  <option value="2">اللجنة الرياضية</option>
+                  <option value="2">اللجنة الاجتماعية</option>
+                  <option value="2">أسرةالجوالة والخدمات</option>
+                  <option value="2">اللجنة الثقافية</option>
+                  <option value="2">اللجنة الفنية</option>
+                  <option value="2">اللجنة الاسر والرحلات</option>
+                </select>
+              </div>
+              <div class="ch-po">
+                <input type="radio" name="position" id="head-position" />
+                <label for="head-position" onclick="choosePosition()">
+                  الترشح لمنصب الامين</label
+                >
+                <input type="radio" name="position" id="deputy-position" />
+                <label for="deputy-position" onclick="choosePosition()">
+                  الترشح لمنصب الامين المساعد</label
+                >
+              </div>
+    
+              <div class="field">
+                <label for="upload">اثبات المشاركة فى الأنشطة</label>
+                <input
+                  type="file"
+                  accept=".pdf"
+                  name="comfil"
+                  id="upload"
+                  required
+                />
+              </div>
+    
+              <input type="submit" value="تقديم الاستمارة" />
+            </form>
+
+      </main>
+
+      <footer>
+       <div id="foot"> FCAI Beni Suef ©  2023 - all rights reserved.</div>
+        </footer>
+
+  </body>
+</html>

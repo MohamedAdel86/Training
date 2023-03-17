@@ -8,16 +8,4 @@ num1=1;
   myImage1.setAttribute('src',imgg);
 }*/
 
-let myButton1 = document.querySelector('#b1');
-let myButton2 = document.querySelector('#b2');
-let myButton3 = document.querySelector('#b3');
-let myHeading = document.querySelector('h1');
-
-/*myButton3.onclick = () => {
-  }*/
-  myButton1.onclick = () => {
-  }
-  myButton2.onclick = () => {
-  }
-
 

@@ -1,0 +1,135 @@
+@media (min-width: 601px) {
+    html {
+      height: 100%;
+    }
+  
+    /*body*/
+    body {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: 150px repeat(12, 1fr) auto auto;
+      grid-gap: px;
+      background-color: rgb(255, 255, 255);
+      color: rgb(0, 8, 45);
+      margin: 0;
+      height: 100%;
+    }
+  
+    /*header*/
+    header {
+      grid-column: 1/5;
+      grid-row: 1;
+      text-align: center;
+      height: auto;
+      display: flex;
+      flex-flow: row;
+      align-items: center;
+      justify-content: center;
+      margin: 0 0 0 0%;
+      min-width: 400px;
+      background-color: rgb(255, 255, 255);
+      z-index: 1;
+    }
+  
+    a {
+      color: inherit;
+      text-decoration: inherit;
+    }
+  
+    .logo {
+      inline-size: 100px;
+      block-size: 100px;
+      opacity: 1;
+    }
+  
+    #logotext1 {
+      font: 35px sans-serif;
+    }
+  
+    #logotext2 {
+      margin-top: -15px;
+      font: 20px sans-serif;
+    }
+  
+    /*nav*/
+    nav {
+      grid-column: 5/12;
+      grid-row: 1;
+      display: flex;
+      flex-flow: row;
+      gap: 30px;
+      min-width: 600px;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+    /*buttons*/
+    button {
+      block-size: auto;
+      inline-size: 7em;
+      color: rgb(255, 255, 255);
+      background-color: rgb(22, 0, 70);
+      border: 2px solid;
+      border-radius: 5px;
+      font: bold 20px sans-serif;
+      padding: 10px;
+    }
+  
+    button:hover {
+      background-color: rgb(38, 12, 89);
+      cursor: pointer;
+    }
+  
+    /*main*/
+    main {
+      grid-column: 1/13;
+      grid-row: 2/12;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font: 50px sans-serif;
+      line-height: 1.75;
+      height: 900px;
+      background-color: #eee;
+    }
+
+    /*form*/
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+        width: 800px;
+        font-size: 14pt;
+        border: 2px solid rgb(22, 0, 70);
+        border-radius: 7px;
+        padding: 20px;
+    }
+
+
+    /*input*/
+    input {
+        height: 25px;
+        padding: 5px;
+        width: 220px;
+        padding: 8px;
+        border: 2px solid rgb(22, 0, 70);
+        border-radius: 7px;
+    }
+
+    /*footer*/
+    footer {
+      grid-column: 1/13;
+      grid-row: 14/16;
+      height: 100px;
+      color: white;
+      background-color: rgb(22, 0, 70);
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
+      align-items: center;
+      font: 15px sans-serif;
+    }
+  }
+

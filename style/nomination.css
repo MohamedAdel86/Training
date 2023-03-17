@@ -1,63 +1,25 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-aside {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 300px;
-    height: 100vh;
-    background-color: #333;
-    direction: rtl;
-}
-
-
-.main-sec {
+ main{
     background-color: #eee;
-    height: 100vh;
-}
-
-.main-sec .container {
-    background-color: #eee;
-    height: 100vh;
     direction: rtl;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 70%;
-    width: 800px;
-    font-size: 14pt;
-    border: 2px solid #333;
-    padding: 20px;
+  align-items: start;
 }
 
-form .feild,
+
+.field,
 .select {
     display: flex;
     justify-content: space-between;
     width: 350px;
 }
 
-form input {
-    height: 25px;
-    padding: 5px;
-    width: 220px;
-}
-
-form label {
+label {
     margin-left: 20px;
 }
 
-form select {
+select {
     width: 220px;
     height: 30px;
 }
@@ -76,10 +38,13 @@ form select {
 
 input[type="submit"] {
     margin: 0 auto;
-    display: block;
     cursor: pointer;
-    padding: 5px 0px;
-    line-height: 0;
-    height: fit-content;
-    width: 120px;
+    block-size: auto;
+    inline-size: 7em;
+    color: rgb(255, 255, 255);
+    background-color: rgb(22, 0, 70);
+    border: 2px solid;
+    border-radius: 5px;
+    font: bold 20px sans-serif;
+    padding: 10px;
 }
