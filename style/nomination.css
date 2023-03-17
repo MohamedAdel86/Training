@@ -1,3 +1,4 @@
+
  main{
     background-color: #eee;
     direction: rtl;
@@ -8,6 +9,8 @@
     display: flex;
     justify-content: space-between;
     width: 350px;
+    height: 5vh;
+
 }
 
 label {
@@ -17,7 +20,7 @@ label {
 select {
     width: 220px;
     height: 30px;
-}
+}   
 
 .ch-po {
     display: flex;
