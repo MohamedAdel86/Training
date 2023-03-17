@@ -10,6 +10,7 @@ let myHeading = document.querySelector('h1');
     window.open("login.html","_self")
   }
   myButton2.onclick = () => {
+    window.open("vote1.html","_self")
   }
   myButton3.onclick = () =>{
     window.open("nom1.html","_self")

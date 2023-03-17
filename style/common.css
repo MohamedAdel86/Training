@@ -100,7 +100,7 @@
         justify-content: space-between;
         align-items: center;
         gap: 30px;
-        width: 800px;
+        width: 400px;
         font-size: 14pt;
         border: 2px solid rgb(22, 0, 70);
         border-radius: 7px;
@@ -117,6 +117,25 @@
         border: 2px solid rgb(22, 0, 70);
         border-radius: 7px;
     }
+
+    input[type="submit"] {
+      margin: 0 auto;
+      cursor: pointer;
+      block-size: auto;
+      inline-size: 7em;
+      color: rgb(255, 255, 255);
+      background-color: rgb(22, 0, 70);
+      border: 2px solid;
+      border-radius: 5px;
+      font: bold 20px sans-serif;
+      padding: 10px;
+  }
+
+
+  input[type="submit"]:hover{
+    background-color: rgb(38, 12, 89);
+    transform: 0.6s;
+}
 
     /*footer*/
     footer {
