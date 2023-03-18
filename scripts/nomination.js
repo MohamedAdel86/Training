@@ -1,23 +1,19 @@
-const phonenum = document.getElementById("phone");
+const myForm = document.getElementById("myForm");
+const phoneInput = document.getElementById("phone");
+const idNumberInput = document.getElementById("idnum");
 
-phonenum.addEventListener("submit", function () {
-  const inputValue = phonenum.value;
-  const regex = /^0\d{10}$/; // regular expression to match "0" followed by 10 digits
-  if (!regex.test(inputValue)) {
-    phonenum.setCustomValidity(
-      "Please enter a valid phone number starting with '0' and with length of 11 digits."
-    );
+myForm.addEventListener("submit", function (event) {
+  if (!/^01[0125]\d{8}$/.test(phoneInput.value)) {
+    phoneInput.setCustomValidity("Invalid phone number");
+    event.preventDefault();
   } else {
-    phonenum.setCustomValidity("");
+    phoneInput.setCustomValidity("");
+  }
+
+  if (!/^\d{14}$/.test(idNumberInput.value)) {
+    idNumberInput.setCustomValidity("Invalid ID number");
+    event.preventDefault();
+  } else {
+    idNumberInput.setCustomValidity("");
   }
 });
-
-function choosePosition() {
-  let head = document.getElementById("head-position"),
-    deputy = document.getElementById("deputy-position");
-  if (head.checked) {
-    deputy.style.display = "none";
-  } else if (deputy.checked) {
-    head.style.display = "none";
-  }
-}
